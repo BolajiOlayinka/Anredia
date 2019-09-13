@@ -484,7 +484,7 @@ img {
   padding-left: 15px;
   font-size:24px;
   line-height:46px;
-  text-align:left;
+  text-align:justify;
   width: 100%;
 }
 
@@ -1324,6 +1324,7 @@ RESERVATION SECTION
 ====================*/
 
 #mu-contact {
+  background-image:url("assets/img/gallery/bg-contact.png");
   background-color: #f8f8f8;
   display: inline;
   float: left;
@@ -1507,31 +1508,104 @@ RESERVATION SECTION
   padding-left:130px;
 }
 .logoArea a {
-  text-align:left;
+  text-align:center;
  ;
 }
 .logoArea p{
   color:white;
   padding-top:15px;
+  line-height:40px;
+  width:70%;
+}
+@media (max-width: 992px){
+.logoArea p{
   line-height:35px;
+  width:80%;
 }
-.logoArea{
-  text-align:left;
 }
-.mu-footer-area h4{
+@media (max-width: 767px) {
+  
+  .mu-footer-area{
+    text-align:center;
+  }
+  .logoArea p{
+    text-align:justify;
+    width:100%;
+  }
+  .mu-footer-social {
   text-align:center;
-  padding-bottom:10px;
- 
-  color:white;
-  font-size:24px;
+  }
+  .mu-footer-copyright p {
+    /* text-align:center;
+    color:white; */
+    display:none;
+  }
+  .mu-footer-copyright h4 {
+    /* text-align:center;
+    color:white;
+    font-size:24px; */
+    display:none;
+   }
+   .mu-footer-social {
+     margin-top:10px;
+     text-align:center;
+     
+   }
+   .copyright{
+     color:white;
+   }
+
+
 }
-.mu-footer-social {
-  display: inline;
-  float: left;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 10px;
+@media (max-width: 991px){
+  .mu-footer-copyright h4 {
+    color:white;
+  }
+  .mu-footer-copyright p {
+    
+    color:white;
+  }
 }
+@media (min-width: 1023px) {
+  .mu-footer-copyright p {
+    /* font-family: "Open Sans", sans-serif; */
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-align:right;
+  }
+  .mu-footer-area h4{
+    text-align:center;
+    padding-bottom:10px;
+   
+    color:white;
+    font-size:24px;
+  }
+  .copyright{
+    text-align:right;
+  }
+  .mu-footer-social {
+    display: inline;
+    float: left;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .mu-footer-copyright h4{
+    padding-bottom:15px;
+    text-align:right;
+    padding-right:100px;
+    
+  }
+  
+}
+
+.logoArea{
+  
+  text-align:justify;
+
+}
+
 
 .mu-footer-social a {
   background-color: #555;
@@ -1552,21 +1626,25 @@ RESERVATION SECTION
 }
 
 .mu-footer-copyright {
-  display: inline;
+
   float: left;
   width: 100%;
+  /* margin-top:6px; */
 }
 
-.mu-footer-copyright p {
+
+/* .mu-footer-copyright p {
   /* font-family: "Open Sans", sans-serif; */
-  font-size: 16px;
+  /* font-size: 16px;
   letter-spacing: 0.5px;
   color: #fff;
-}
+  text-align:right;
+} */ 
 
 .mu-footer-copyright p a {
   color: #fff;
 }
+
 
 
 /*==================
@@ -1647,7 +1725,7 @@ RESERVATION SECTION
   }
   
   #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 0;
   }
 
@@ -1984,11 +2062,11 @@ span.price li{
   color:black;
 }
 .ServiceInfo1{
-  margin-top:150px;  
+
   background-image:url("assets/img/slider/bg.png");
 }
 .ServiceInfo2{
-  color:white;
+  
   background-image:url("assets/img/slider/bg-black.png");
 }
 .ServiceInfo3{
@@ -2016,9 +2094,17 @@ margin-top:150px;
       display:none;
       margin-top:700px;
     }
-    #mu-footer {
-      margin-top:450px;
+    #myService-footer {
+      background-color: #000;
+      float: left;
+      padding: 50px 0;
+      width: 100%;
+      margin-top:850px;
     }
+  
+    /* #mu-footer {
+      margin-top:450px;
+    } */
     .ServiceInfo1{
       height:200px;
       background-color:#0C8Ca7;
@@ -2030,11 +2116,12 @@ margin-top:150px;
       height:200px;
       background-color:#0C8Ca7;
     }
-    
+   
 
     .wrapper-pricing {
       margin-top:-120px;
       margin-right:20px;
+     
     }
     .price-icon{
       font-size:20px;
@@ -2061,6 +2148,7 @@ margin-top:150px;
   margin-left:60px;
   margin-right:60px;
   padding-bottom:50px;
+  padding-top:15px;
 }
 .businessBody2{
   
@@ -2076,4 +2164,85 @@ margin-top:150px;
 }
 .btnSubmit{
   text-align: center;
+}
+
+
+.blackLine{
+  padding-top:5px;
+  padding-bottom: 15px;
+}
+
+@media (max-width:1098px){
+  
+}
+
+@media (min-width:1099px){
+  .ServiceInfo2{
+    color:black;
+  }
+  .ServiceInfo1{
+    color:black;
+    margin-top:150px; 
+  }
+   
+  .bodyContainer{
+    background-color:white;
+    margin-top:100px;
+    margin-bottom:100px;
+    margin-right:80px;
+    margin-left:80px;
+    height: 1000px;
+  }
+  .bodyContainer2{
+    background-color:#0C8Ca7;
+    margin-top:100px;
+    margin-bottom:100px;
+    margin-right:80px;
+    margin-left:80px;
+    height: 1000px;
+  }
+}
+@media (max-width:1100px){
+  
+  .ServiceInfo2{
+    color:white;
+  }
+  .ServiceInfo1{
+    color:black;
+    margin-top:150px; 
+  }
+  
+}
+@media (max-width:991px){
+  .ServiceInfo1{
+    color:black;
+    margin-top:200px; 
+    margin-bottom:-10px;
+  }
+  .ServiceInfo2{
+    margin-bottom:-10px;
+  }
+}
+@media (max-width:426px){
+  .bodyContainer{
+    display:none;
+  }
+
+  .ServiceInfo1{ 
+    display:none;
+  }
+  .ServiceInfo2{ 
+    display:none
+  }
+
+  .ServiceInfo3{
+    display:none;
+  }
+}
+#myService-footer {
+  background-color: #000;
+  display: inline;
+  float: left;
+  padding: 50px 0;
+  width: 100%;
 }
